@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+}
+.board{
+    display: flex;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    margin: auto;
+}
+.cell{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 4rem;
+}
+.overlay{
+    position: fixed;
+    height: 100%;
+    z-index: 2;
+    background-color:rgba(0,0,0,0.8);
+    top: 0;
+    bottom: o;
+    left: 0;
+    right:0;
+    display: none;
+    color: white;
+}
+.result{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.result button{
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.result p{
+    font-size: xx-large;
+}
